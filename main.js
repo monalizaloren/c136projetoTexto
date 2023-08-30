@@ -1,8 +1,12 @@
+
+
 difference = 0;
 rightWristX = 0;
 leftWristX = 0;
 
-  function setup() {
+
+//Crie a função 'setup'
+???
   video = createCapture(VIDEO);
   video.size(550, 500);
 
@@ -13,7 +17,7 @@ leftWristX = 0;
   poseNet.on('pose', gotPoses);
 }
 
-function modelLoaded() {
+//Crie a função 'modeloLoaded'
   console.log('PoseNet Is Initialized!');
 }
 
@@ -31,12 +35,14 @@ function gotPoses(results)
     console.log("leftWristX  = " + leftWristX  + " rightWristX = "+ rightWristX + " difference = " + difference);
   }
 }
-
-function draw() {
+// Crie a função 'draw'
+???
 background('#6C91C2');
 
   document.getElementById("font_size").innerHTML = "Tamanho da fonte será = " + difference +"px";
-textSize(difference);
+//Utilize 'textSize'para alterar o tamanho do texto
+???(difference);
 fill('#FFE787');
-text('Pedro', 50, 400);
+//Coloque o nome que aparacerá dentro do canvas
+text('???', 50, 400);
 }
